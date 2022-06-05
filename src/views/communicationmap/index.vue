@@ -1911,7 +1911,7 @@ export default {
   transform: translate(-50%, -50%);
   width: 790px;
   height: 430px;
-  background: rgba(40, 43, 57, 0.85);
+  background: rgba(21, 62, 109, 0.9);
   z-index: 90;
 }
 #Communicationmap #PTTable .top {
@@ -2045,7 +2045,7 @@ export default {
   top: calc(100% + 160px);
   left: calc(100% - 805px);
   z-index: 91;
-  background: rgba(40, 43, 57, 0.85);
+  background: rgba(21, 62, 109, 0.9);
   color: #fff;
   font-family: KuHei;
 }
@@ -2146,13 +2146,14 @@ export default {
 }
 /* 个人关系图谱 */
 #Communicationmap #relationShip{
+  
   position: absolute;
   top: calc(100% + 430px);
   left: calc(20% - 30px);
   transform: translate(-50%, -50%);
   width: 600px;
   height: 600px;
-  background: rgba(40, 43, 57, 0.85);
+  background: rgba(21, 62, 109, 0.9);
   z-index: 90;
 }
 #Communicationmap #relationShip .top {
@@ -2231,7 +2232,7 @@ export default {
   height: 35px;
   padding: 0;
   text-align: center;
-  background-color: rgba(40, 43, 57, 0.8);
+  background-color: rgba(42, 129, 196, 0.8);
   border-color: rgba(219, 219, 219, 0.555);
   transition: all 1s;
 }
@@ -2551,7 +2552,7 @@ export default {
   align-content: center;
 }
 #Communicationmap >>> .infolegend {
-  background: rgba(40, 43, 57, 0.85);
+  background: rgba(21, 62, 109, 0.9);
   color: rgba(255, 255, 255, 0.75);
   height: auto;
   margin: 0;
@@ -2622,18 +2623,18 @@ export default {
   margin-top: 85px;
 }
 #Communicationmap >>> .rel-map[data-v-2964abc9] {
-  background-color: rgba(40, 43, 57, 0.85) !important
+  background-color: rgba(21, 62, 109, 0.9) !important
 }
 #Communicationmap >>> .c-mb-button .c-mb-text {
   color: white!important;
 }
 #Communicationmap >>> .c-mini-toolbar {
   border: #bbbbbb solid 0px!important;
-  background-color: rgba(40, 43, 57, 0.85)!important;
+  background-color: rgba(21, 62, 109, 0.9)!important;
   box-shadow: 0px 0px 0px #cccccc!important;
 }
 #Communicationmap >>> .c-mb-button {
-  background-color: rgba(40, 43, 57, 0.85)!important;
+  background-color: rgba(21, 62, 109, 0.9)!important;
   border-top: #efefef solid 0px!important;
 }
 </style>

@@ -252,7 +252,7 @@ export default {
 }
 #timeSelection >>> .el-select-dropdown__item.hover,
 #timeSelection >>> .el-select-dropdown__item:hover {
-  background-color: rgba(40, 43, 57, 0.85);
+  background-color: rgba(21, 62, 109, 0.9);
   color: #ff7979;
 }
 #timeSelection >>> .el-select-dropdown__item.selected {
