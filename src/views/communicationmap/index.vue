@@ -893,7 +893,7 @@ export default {
       var data = {};
       data.name = this.json.name;
       data.where = this.json.where;
- // data.timz = that.checkTime3(new Date(that.timx));
+      // data.timz = that.checkTime3(new Date(that.timx));
       // data.timx = that.checkTime3(
       //   new Date(new Date(data.timz).getTime() + 24 * 60 * 60 * 1000)
       // );
@@ -963,6 +963,8 @@ export default {
               24 * 60 * 60 * 1000 * (that.tiansh - 1)
           )
         );
+        data.timz = "2021-11-14 00:00";
+        data.timx = "2021-11-15 00:00";
         // 个人详细信息
         that.$store
           .dispatch("communication/CSPInformation", data)
