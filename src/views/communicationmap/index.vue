@@ -893,12 +893,12 @@ export default {
       var data = {};
       data.name = this.json.name;
       data.where = this.json.where;
-      // data.timz = that.checkTime3(new Date(that.timx));
-      // data.timx = that.checkTime3(
-      //   new Date(new Date(data.timz).getTime() + 24 * 60 * 60 * 1000)
-      // );
-      data.timz = "2021-11-14 00:00";
-      data.timx = "2021-11-15 00:00";
+      data.timz = that.checkTime3(new Date(that.timx));
+      data.timx = that.checkTime3(
+        new Date(new Date(data.timz).getTime() + 24 * 60 * 60 * 1000)
+      );
+      // data.timz = "2021-11-14 00:00";
+      // data.timx = "2021-11-15 00:00";
       console.log(data);
       that.$store.dispatch("communication/CSTData", data).then((datas) => {
         that.tables = datas;
@@ -963,8 +963,8 @@ export default {
               24 * 60 * 60 * 1000 * (that.tiansh - 1)
           )
         );
-        data.timz = "2021-11-14 00:00";
-        data.timx = "2021-11-15 00:00";
+        // data.timz = "2021-11-14 00:00";
+        // data.timx = "2021-11-15 00:00";
         // 个人详细信息
         that.$store
           .dispatch("communication/CSPInformation", data)
@@ -974,6 +974,7 @@ export default {
               .then((dataz) => {
                 document.getElementById("bg").style.display = "none";
                 this.details = datas[0]; // 个人详细信息
+                console.log(this.details);
                 for (let i = 0; i < dataz.length; i++) {
                   dataz[i].时间 = that.checkTime2(new Date(dataz[i].时间));
                 }
